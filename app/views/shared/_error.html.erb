@@ -1,0 +1,16 @@
+<div class="errors_message">
+  <% if model.errors.present? %>
+    <% model.errors.full_messages.each do |message| %>
+
+      <% flash.each do |message_type, message| %>
+        <div class="notice_error">
+          <%= message %>
+        </div>
+      <% end %>
+
+      <ul>
+        <li><%= message %></li>
+      </ul>
+    <% end %>
+  <% end %>
+</div>

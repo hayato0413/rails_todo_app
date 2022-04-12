@@ -1,0 +1,44 @@
+<div class="main-container">
+  <h2>スケジュール新規作成</h2>
+
+  <%= render "shared/error", model: @task %>
+
+  <%= form_for(@task) do |f| %>
+    <table>
+        <tbody>
+          <tr class="new_table">
+            <th>タイトル</th>
+            <td><%= f.text_field :title %></td>
+          </tr>
+          <tr class="new_table">
+            <th>開始日</th>
+            <td><%= f.date_field :startday %></td>
+          </tr>
+          <tr class="new_table">
+            <th>終了日</th>
+            <td><%= f.date_field :endday %></td>
+          </tr>
+          <tr class="new_table">
+            <th>終日</th>
+            <td>
+              <%= f.check_box :everyday %>
+              <p>終日の場合はチェックを入れます</p>
+            </td>
+          </tr>
+          <tr class="new_table">
+            <th>スケジュールメモ</th>
+            <td><%= f.text_area :memo %></td>
+          </tr>
+        </tbody>   
+      
+    </table>
+    <ul>
+      <li id="add_new_task">
+        <%= f.submit "スケジュールを新規登録する"%>
+      </li>
+      <li>
+        <a href="/tasks">スケジュール一覧に戻る</a>
+      </li>
+    </ul>
+  <% end %>
+</div>

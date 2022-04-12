@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TodoApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Ruby on Rails スケジュール管理アプリ</h1>
+      </header>
+      
+      <main>
+         <%= yield %>
+      </main>
+
+      <footer>
+        <p id="footer_line">現在の日時：<%= Date.current.strftime("%Y年%m月%d日") %> スケジュール合計：<%= Task.count%></p>
+      </footer>
+    </div>
+  </body>
+</html>

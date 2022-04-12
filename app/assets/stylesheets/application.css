@@ -1,0 +1,69 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 100px;
+}
+main {
+  margin-bottom: 50px;
+}
+
+h1 {
+  background-color: #c52f24;
+  padding: 30px 0 30px 10px;
+  margin-bottom: 50px;
+  width: 100%;
+  color: white;
+}
+
+ footer {
+   background-color: #c52f24;
+   padding: 30px 0 30px 10px;
+   width: 100%;
+   color: white;
+   font-size: 32px;
+   position: absolute;
+   bottom: 0px;
+   font-weight: bold;
+ }
+
+ .errors_message li {
+  margin-bottom: 20px;
+ }
+
+ .notice {
+   margin-bottom: 20px;
+   padding-top: 10px;
+   width: 400px;
+   height: 50px;
+   background-color:aquamarine;
+   text-align: center;
+   border: 2px solid;
+ }
+ .notice_error {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  width: 400px;
+  height: 50px;
+  background-color:tomato;
+  text-align: center;
+  border: 2px solid;
+ }

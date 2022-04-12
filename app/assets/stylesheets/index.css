@@ -1,0 +1,33 @@
+.main-container {
+  padding: 10px;
+  max-width: 100%;
+}
+
+
+h2 {
+  margin-bottom: 30px;
+}
+
+
+th, td {
+  border: solid 1px;
+  padding: 10px 20px
+}
+th {
+  background-color: #ffdfdf;
+}
+td {
+  background-color: #f1c8c861;
+}
+#everyday-sign {
+  text-align: center;
+}
+table {
+  border-collapse: collapse;
+  margin-bottom: 10px;
+}
+
+
+#create-task {
+  margin-top: 20px; 
+}

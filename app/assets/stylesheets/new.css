@@ -1,0 +1,40 @@
+
+.new_table th {
+  width: 30%;
+}
+.new_table td {
+  width: 70%;
+}
+.new_table td input {
+  background-color: white;
+  border: solid 1px;
+  padding: 5px;
+  width: 100%;
+}
+.new_table td input[type="text"], input[type="date"] {
+  height: 30px;
+}
+.new_table p {
+  text-align: center;
+}
+.new_table textarea {
+  background-color: white;
+  width: 100%;
+  min-height: 20vh;
+  padding: 5px;
+}
+
+ul {
+  list-style: none;
+  margin-left: 40px;
+}
+#add_new_task {
+  margin-bottom: 15px; 
+}
+#add_new_task input {
+  border: solid 1px;
+  background-color: #efefef;
+  padding: 5px 5px;
+  color: black;
+  text-decoration: none;
+}
